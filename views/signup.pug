@@ -1,0 +1,24 @@
+extends base
+
+block content
+
+    //-content
+    .signup-container
+        form.signup-content
+            .name-group
+                label(for='name') Name
+                input#name.input_update(type="text", placeholder="name" name='name')
+            .email-group
+                label(for='email') Email
+                input#email.input_update(type="email", placeholder="you@example.com" name='email')
+            .role-group
+                label(for='role') Role
+                input#role.input_update(type="text", placeholder="role" name='role')
+            .name-group
+                label(for='password') Password
+                input#password.input_update(type="password", placeholder="........." name='password')
+            .name-group
+                label(for='confirmPassword') Confirm Password
+                input#confirmPassword.input_update(type="password", placeholder="..........." name='confirmPassword')
+            button.signup_btn Sign up
+

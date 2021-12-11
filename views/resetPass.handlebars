@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Signup</title>
+</head>
+
+<body>
+
+    <!--header-->
+    <div class="signup-header">
+        <div class="signup-header_data">Signup Page</div>
+    </div>
+
+    <!--content-->
+    <div class="signup-container">
+
+        <div class="role-group">
+            <label for="role">New Password</label>
+            <input type="text" id="password" class="input_update" placeholder="new password">
+        </div>
+        <div class="password-group">
+            <label for="passwordConfirm">Password Confirm</label>
+            <input type="password" id="passwordConfirm" class="input_update" placeholder="............">
+        </div>
+        <div class="confirm_password-group">
+            <label for="confirm_password" id="confirm_password">Token</label>
+            <input id="token" class="input_update" value="${options.message}">
+        </div>
+        <button class="reset-btn">Reset Pass</button>
+
+    </div>
+
+</body>
+
+</html>

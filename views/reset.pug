@@ -1,0 +1,13 @@
+extends base
+
+block content
+    .account-container
+        .account-content
+            form.update-data 
+                .name-group
+                    label.update-name(for='name') Name
+                    input#name.input_update(type="name", name='name')
+                .email-group   
+                    label.update-name(for='email') Email
+                    input#email.input_update(type="email", placeholder="you@example.com", name='email')
+                button.update-data-btn Reset Password 

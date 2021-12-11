@@ -1,0 +1,12 @@
+extends base
+
+block content
+    .tour-contant
+        p
+            h1.tour_name= tour.name 
+            br
+        p.tour_startDate= `Dificulty: ${tour.difficulty}`
+        p.tour_startDate= `MaxGroupSize: ${tour.maxGroupSize}`
+        p.tour_startDate= `Price: ${tour.price}`
+        p.tour_summary= tour.summary 
+       

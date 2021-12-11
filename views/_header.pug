@@ -1,0 +1,15 @@
+.header
+    .all-tour
+        a.all-tour_button(href='/') All Tours
+     
+    if user
+        .sign-login
+            .logout
+                a(href='/me')= `Welcome ${user.name}`
+                button.button_logout Log Out
+    else
+        .sign-login
+            .signin
+                a.button_signin(href=`/signup`) Sign up
+            .login
+                a.button_login(href=`/login`) Log in

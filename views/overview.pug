@@ -1,0 +1,14 @@
+extends base
+
+block content
+    .overview-contant
+        each tour in tours
+            .card 
+                .card_header
+                    .card_header-data= tour.name
+                .card_body
+                    .duration= `Duration ${tour.duration}` 
+                    .ratingsavarage= `Ratings Avarage ${tour.ratingsAvarage}`  
+                .card_footer
+                    .card_footer-button
+                        a.detail_button(href=`/tour/${tour.name}`) Details 

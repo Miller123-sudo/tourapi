@@ -1,0 +1,28 @@
+extends base
+
+block content
+    .account-container
+        .account-content
+            form.update-data(action='/submit-user-data',method='POST') 
+                .name-group
+                    label.update-name(for='name') Name
+                    input#name.input_update(type="name", value=`${user.name}`, name='name')
+                .email-group   
+                    label.update-name(for='email') Email
+                    input#email.input_update(type="email", value=`${user.email}`, placeholder="you@example.com", name='email')
+                button.update-data-btn Update Data 
+            form.update-password
+                .pass-group
+                    label#old-pass(for='password') old password
+                    input#oldpassword.input_update-pass(type="password", placeholder=".......")
+                .pass-group
+                    label#new-pass(for='password') new password
+                    input#newpassword.input_update-pass(type="password", placeholder=".......")
+                .pass-group
+                    label#confirm-pass(for='password') confirm password
+                    input#confirmpassword.input_update-pass(type="password", placeholder=".......")
+                button.update-pass-btn Update Pass 
+            
+
+
+    

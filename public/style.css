@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 8vh;
+    background-color: #6DD5FA;
+    display: flex;
+    justify-content: space-between;
+}
+.all-tour{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.all-tour_button{
+    
+    padding-left: 5px;
+}
+.sign-login{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+.logout{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    padding: 7px;
+}
+.button_signin{
+    width: 10vw;
+    height: 80%;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.button_login{
+    width: 10vw;
+    height: 80%;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.overview-contant{
+    width: 100%;
+    border: 1px solid black;
+    /* display: flex; */
+    overflow-y: auto;
+}
+.card{
+    width: 32%;
+    height: 70vh;
+    margin: 5px;
+    border: 1px solid black;
+}
+.card_header{
+    width: 100%;
+    height: 30vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #38ef7d;
+    opacity: 0.6;
+    font-weight: bolder;
+}
+.card_body{
+    width: 100%;
+    height: 32vh;
+    padding-top: 30px;
+    padding-left: 5px;
+}
+.card_footer{
+    display: flex;
+    justify-content: center;
+}
+.detail_button{
+    border: none;
+    width: 10vw;
+    height: 5vh;
+    background-color: lawngreen;
+    border-radius: 30px;
+}
+.tour_name{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #91EAE4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 5px;
+    color: black;
+}
+
+.tour-contant{
+    width: 100vw;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*login code*/
+
+.login-container{
+    width: 97vw;
+    height: 77vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+.login-card{
+    width: 33vw;
+    height: 70vh;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+}
+.login-card_header{
+    width: 100%;
+    height: 8vh;
+    padding: 5px;
+    /* border: 1px solid black; */
+    font-size: 26px;
+    color: chartreuse;
+    font-weight: bolder;
+    background-color: rgba(0,128,0,0.1);
+}
+.login-card_body{
+    width: 100%;
+    height: 54vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,0,0,0.1);
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.form_label{
+    height: 30px;
+    font-size: large;
+}
+.form_input{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login-card_footer{
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(0,128,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Account page style*/
+.account-container{
+    /* width: 90%; */
+    border: 1px solid black;
+    margin: 1rem;
+    height: 76vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-content{
+    width: 45%;
+    height: 90%;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(0,255,0,0.2);
+}
+.update-data{
+    border: 1px solid black;
+    margin: 10px;
+}
+.update-password{
+    border: 1px solid black;
+    margin: 10px;
+}
+.update-data-btn{
+    border: none;
+    width: 90px;
+    height: 30px;
+    margin-left: 400px;
+    border-radius: 10px;
+    background-color: rgb(100, 10, 255,0.1);
+}
+.pass-group{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 5px;
+    padding: 5px;
+}
+.input_update-pass{
+    margin-left: 8px;
+    width: 40%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.name-group,.role-group,.password-group,.confirm_password-group,.email-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    padding: 12px;
+}
+/* .email-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+} */
+#update-name{
+    padding: 5px;
+}
+#update-email{
+    padding: 5px;
+}
+.input_update{
+    width: 40%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*sign up code*/
+.signup-header{
+    width: 100%;
+    height: 10vh;
+    background-color: #6DD5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-header_data{
+    font-size: 30px;
+    font-weight: bolder;
+    color: orchid;
+}
+.signup-container{
+    /* width: 50%;
+    height: 70%; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-content{
+    width: 30vw;
+    height: 80vh;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #86A8E7;
+}
+.signup_btn{
+    border: none;
+    width: 90px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(100, 10, 255,0.1);
+}
+.input_update[type=text] {
+    width: 190px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+.input_update[type=text]:focus {
+    width: 250px;
+  }
+.input_update[type=email] {
+    width: 190px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+.input_update[type=email]:focus {
+    width: 250px;
+  }
+.input_update[type=password] {
+    width: 190px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+  }
+.input_update[type=password]:focus {
+    width: 250px;
+  }
